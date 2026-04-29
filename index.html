@@ -65,26 +65,42 @@
       </section>
       <section class="survey">
         <h3>КОНОК АНКЕТАСЫ</h3>
-        <form id="guest-form">
+
+        <form id="guest-form" action="https://formspree.io/f/meevyyen" method="POST">
           <label>Сиздин атыңыз?</label>
           <input
             class="name_anketa_input"
             type="text"
+            name="name"
             placeholder="Атыңыз..."
             required
           />
 
           <label>Кечеге катыша аласызбы?</label>
           <div class="radio-group">
-            <label for="yes">
-              <input type="radio" id="yes" name="attendance" value="ооба" />
+            <label>
+              <input type="radio" name="attendance" value="ооба" required />
               Албетте, катышам
             </label>
-            <label for="no">
-              <input type="radio" id="no" name="attendance" value="жок" />
+            <label>
+              <input type="radio" name="attendance" value="жок" required />
               Тилекке каршы, катыша албайм
             </label>
           </div>
+
+          <input
+            type="hidden"
+            name="_replyto"
+            value="turusbekovagulisa.6@gmail.com"
+          />
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="Жаңы конок анкета (Кыз узатуу)"
+          />
+
+          <input type="hidden" name="_next" value="https://asema_wedding/vercel.com/thankyou.html">
 
           <button type="submit">Жиберүү</button>
         </form>
