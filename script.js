@@ -22,3 +22,9 @@ function updateTimer() {
 
 setInterval(updateTimer, 1000);
 updateTimer();
+
+document.getElementById("guest-form").addEventListener("submit", function () {
+  setTimeout(function () {
+    window.location.href = "https://wedding-asema.vercel.app/thankyou.html";
+  }, 1500);
+});
