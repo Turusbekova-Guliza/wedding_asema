@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+.container {
+    max-width: 3425px;
+    margin: 0 auto;
+    background: #ffd1f8fd;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 50px;
+}
+
+section {
+    width: 100%;
+    height: 450px;
+    padding: 0 10px;
+    border-bottom: 1px solid #0d0c0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: #040303;
+}
+
+.event-title {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.big-date {
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', serif;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#timer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    background: #ffc6f6fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+}
+
+#guest-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.name_anketa_input {
+    width: 90%;
+    padding: 10px 0 10px 10px;
+    margin: 15px 0;
+    border: 1px solid #ffd1f8fd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.radio-group > label {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+button {
+    background-color: #000000;
+    color: #ffd1f8fd;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.footer { 
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer h4 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+}

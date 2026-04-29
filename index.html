@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ky">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кыз Узатуу - Асема</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <h1 class="name">Asema</h1>
+        <h2 class="event-title">Кыз узатуу</h2>
+        <div class="date-main">Май 23, 2026</div>
+      </section>
+      <section class="invitation-text">
+        <h3>УРМАТТУУ КОНОКТОР!</h3>
+        <p>
+          Сиздерди жашообуздагы эң маанилүү окуя — Кыз узатуу күнүн белгилөөгө
+          чакырабыз!
+        </p>
+        <div class="big-date">23 Май 2026</div>
+        <p>
+          Биз үчүн эң кымбат адамдар ушул күнү биз менен бирге болушун чын
+          жүрөктөн каалайбыз.
+        </p>
+      </section>
+      <section class="address">
+        <h3>ДАРЕГИБИЗ:</h3>
+        <p>Бишкек шаары, Кут айылы, 10 кочо</p>
+        <div class="map-placeholder">
+          <a
+            href="https://2gis.kg/bishkek/geo/70030076282932891/74.421743,43.044817"
+            target="_blank"
+            >2gis Адресс</a
+          >
+        </div>
+      </section>
+      <section class="countdown">
+        <h3>Кыз узатууга чейин:</h3>
+        <div id="timer">
+          <div class="time-box">
+            <span id="days">24</span>
+            <p>Күн</p>
+          </div>
+          <div class="time-box">
+            <span id="hours">22</span>
+            <p>Саат</p>
+          </div>
+          <br />
+          <br />
+          <div class="time-box">
+            <span id="minutes">54</span>
+            <p>Мүнөт</p>
+          </div>
+          <div class="time-box">
+            <span id="seconds">0</span>
+            <p>Секунд</p>
+          </div>
+        </div>
+      </section>
+      <section class="survey">
+        <h3>КОНОК АНКЕТАСЫ</h3>
+        <form id="guest-form">
+          <label>Сиздин атыңыз?</label>
+          <input
+            class="name_anketa_input"
+            type="text"
+            placeholder="Атыңыз..."
+            required
+          />
+
+          <label>Кечеге катыша аласызбы?</label>
+          <div class="radio-group">
+            <label for="yes">
+              <input type="radio" id="yes" name="attendance" value="ооба" />
+              Албетте, катышам
+            </label>
+            <label for="no">
+              <input type="radio" id="no" name="attendance" value="жок" />
+              Тилекке каршы, катыша албайм
+            </label>
+          </div>
+
+          <button type="submit">Жиберүү</button>
+        </form>
+      </section>
+      <footer class="footer">
+        <p>Урматтоо менен, үй ээлери</p>
+        <h4>Кундузбек & Жаркынай</h4>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
