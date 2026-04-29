@@ -23,8 +23,25 @@ function updateTimer() {
 setInterval(updateTimer, 1000);
 updateTimer();
 
-document.getElementById("guest-form").addEventListener("submit", function () {
-  setTimeout(function () {
-    window.location.href = "https://wedding-asema.vercel.app/thankyou.html";
-  }, 1500);
-});
+document
+  .getElementById("guest-form")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      window.location.href = "https://wedding-asema.vercel.app/thankyou.html";
+    } else {
+      alert("Ката кетти. Кайра аракет кылыңыз.");
+    }
+  });
